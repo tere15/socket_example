@@ -19,9 +19,10 @@ window.onload = function(event){
     btnSend.onclick = function(){
         
         var msg = document.getElementById('chat_message');
+        var name = document.getElementById('chat_name');
         console.log(msg.value);
         var dataToServer ={
-            name:'undefined',
+            name:name.value,
             message:msg.value
         }
         //Send message to server
